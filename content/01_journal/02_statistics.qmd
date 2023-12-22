@@ -2,8 +2,6 @@
 title: "Statistical Concepts"
 ---
 
-
-
 # 1
 
 For each variable, compute the following values. You can use the built-in functions or use the mathematical formulas.\
