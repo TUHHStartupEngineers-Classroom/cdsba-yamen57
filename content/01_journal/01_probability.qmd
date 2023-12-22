@@ -97,7 +97,8 @@ cars
 plot(cars)
 ```
 
-# Assignment I
+# Assignment I 
+The calculation  
 
 ```{r}
 
@@ -145,3 +146,22 @@ notT <- 1 - T
 
 = 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%  
 
+
+# Assignment III
+
+```{r}
+
+# Probabilities
+B_GivenA <- 0.97
+B_GivenNotA <- 0.01
+A <- 0.04
+notA <- 1-A
+
+A_GivenB <- (B_GivenA * A) / (B_GivenA * A + notA * B_GivenNotA)
+
+notA_GivenB <- (notA * B_GivenNotA) / (B_GivenA * A + notA * B_GivenNotA)
+
+```
+
+
+These results show that in case the alarm is triggered, there is a possibility of about 19.83% that the product is flawless and a probability of 80.17% that the product is faulty.

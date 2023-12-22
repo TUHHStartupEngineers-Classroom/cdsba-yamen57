@@ -203,6 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code"><span class="header-section-number">6</span> Source Code</a></li>
   <li><a href="#assignment-i" id="toc-assignment-i" class="nav-link" data-scroll-target="#assignment-i"><span class="header-section-number">7</span> Assignment I</a></li>
   <li><a href="#assignment-ii" id="toc-assignment-ii" class="nav-link" data-scroll-target="#assignment-ii"><span class="header-section-number">8</span> Assignment II</a></li>
+  <li><a href="#assignment-iii" id="toc-assignment-iii" class="nav-link" data-scroll-target="#assignment-iii"><span class="header-section-number">9</span> Assignment III</a></li>
   </ul>
 </nav>
     </div>
@@ -398,6 +399,7 @@ Note
 </section>
 <section id="assignment-i" class="level1" data-number="7">
 <h1 data-number="7"><span class="header-section-number">7</span> Assignment I</h1>
+<p>The calculation</p>
 <div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-4_3edeecaba829a416f55cab30b848644c">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Probabilities</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a>S <span class="ot">&lt;-</span> <span class="fl">0.3</span></span>
@@ -431,6 +433,21 @@ Note
 <p>=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%</p>
 <p>-What is the percentage of customers using only one device?</p>
 <p>= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%</p>
+</section>
+<section id="assignment-iii" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Assignment III</h1>
+<div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-5_988a96c30174a68b131e36bffa9c0bbf">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Probabilities</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>B_GivenA <span class="ot">&lt;-</span> <span class="fl">0.97</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>B_GivenNotA <span class="ot">&lt;-</span> <span class="fl">0.01</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>A <span class="ot">&lt;-</span> <span class="fl">0.04</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>notA <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">-</span>A</span>
+<span id="cb7-6"><a href="#cb7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7"></a>A_GivenB <span class="ot">&lt;-</span> (B_GivenA <span class="sc">*</span> A) <span class="sc">/</span> (B_GivenA <span class="sc">*</span> A <span class="sc">+</span> notA <span class="sc">*</span> B_GivenNotA)</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a>notA_GivenB <span class="ot">&lt;-</span> (notA <span class="sc">*</span> B_GivenNotA) <span class="sc">/</span> (B_GivenA <span class="sc">*</span> A <span class="sc">+</span> notA <span class="sc">*</span> B_GivenNotA)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>These results show that in case the alarm is triggered, there is a possibility of about 19.83% that the product is flawless and a probability of 80.17% that the product is faulty.</p>
 
 
 </section>
@@ -785,7 +802,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":true});</script>
 
 
 
