@@ -1,16 +1,19 @@
 ---
 title: "Statistical Concepts"
 ---
+
+
+
 # 1
 
-For each variable, compute the following values. You can use the built-in functions or use the mathematical formulas.  
-expected value  
-variance  
-standard deviation  
+For each variable, compute the following values. You can use the built-in functions or use the mathematical formulas.\
+expected value\
+variance\
+standard deviation
 
 ```{r}
 
-
+random_vars <- readRDS("C:/Users/zayed/OneDrive/Desktop/data/Causal_Data_Science_Data/random_vars.rds")
 expected_age <- colMeans(random_vars[1])
 expected_income <- colMeans(random_vars[2])
 
@@ -22,15 +25,18 @@ sd_random_vars <- lapply(random_vars, sd)
 
 
 ```
-# 2
--Explain, if it makes sense to compare the standard deviations.  
 
-Depending on the scenario, standard deviation can provide valuable insights, especially when comparing the output of two machines.  In our case, it does not make sense to compare the standard deviations of income and age, as income exhibits a larger degree of variability than age.
+# 2
+
+-Explain, if it makes sense to compare the standard deviations.
+
+Depending on the scenario, standard deviation can provide valuable insights, especially when comparing the output of two machines. In our case, it does not make sense to compare the standard deviations of income and age, as income exhibits a larger degree of variability than age.
 
 # 3
--Then, examine the relationship between both variables and compute:  
-covariance  
-correlation  
+
+-Then, examine the relationship between both variables and compute:\
+covariance\
+correlation
 
 ```{r}
 
@@ -40,15 +46,16 @@ correlation <- cor(random_vars[1], random_vars[2])
 
 
 ```
+
 # 4
--What measure is easier to interpret? Please discuss your interpretation.  
+
+-What measure is easier to interpret? Please discuss your interpretation.
 
 For me, covariance is easier to interpret; The high, positive covariance indicates that the two random variables move in the same direction.
 
-
 # 5
-Compute the conditional expected value for:  
 
+Compute the conditional expected value for:
 
 ```{r}
 
@@ -61,16 +68,15 @@ correlation <- cor(random_vars[1], random_vars[2])
 
 # 6
 
--Compute the conditional expected value for:  
+-Compute the conditional expected value for:
+
 ```{r}
 
-#1
 expected_income_under_18 <- mean(random_vars$income[random_vars$age <= 18])
 
-#2
+
 expected_income_between_18_65 <- mean(random_vars$income[random_vars$age >= 18 & random_vars$age < 65])
 
-#3
 expected_income_above_65 <- mean(random_vars$income[random_vars$age >= 65])
 
 
