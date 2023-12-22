@@ -83,9 +83,24 @@ code
 ```
 
 Add a language to syntax highlight code blocks:
+
+
+```{r}
+1 + 1
+```
+
+```{r}
+cars
+```
+
+```{r}
+plot(cars)
+```
+
 #Assignment I
 
 ```{r}
+
 # Probabilities
 S <- 0.3
 T_S <- 0.2
@@ -108,29 +123,25 @@ sum <- S_and_T + S_and_notT + notS_and_T + notS_and_notT
 # Marginal Probabilities
 T <- S_and_T + notS_and_T
 notT <- 1 - T
+
 ```
 
-```{r}
-cars
-```
 
-```{r}
-plot(cars)
-```
+
 # Assignment II
 
--What is the percentage of customers using all three devices?.
+-What is the percentage of customers using all three devices?  
 
-=(A∩B∩C) = 0.5%.
-
-
--What is the percentage of customers using at least two devices?.
-
-=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%.
+=(A∩B∩C) = 0.5%  
 
 
--What is the percentage of customers using only one device?.
+-What is the percentage of customers using at least two devices?  
+
+=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%  
 
 
-= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%.
+-What is the percentage of customers using only one device?  
+
+
+= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%  
 
