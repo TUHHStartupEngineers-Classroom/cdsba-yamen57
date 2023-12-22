@@ -9,7 +9,7 @@ You can delete everything in here and start fresh.
 This is a `.qmd` file. It is plain text with special features. Any time you write just like this, it will be compiled to normal text in the website. If you put a \# in front of your text, it will create a top level-header.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-# Added
+
 # Text Formatting
 
 *italics* and **bold**
@@ -85,7 +85,28 @@ code
 Add a language to syntax highlight code blocks:
 
 ```{r}
-1 + 1
+# Probabilities
+S <- 0.3
+T_S <- 0.2
+T_notS <- 0.6
+
+# Complementary Probabilities
+notS <- 1 - S
+notT_S <- 1 - T_S
+notT_notS <- 1 - T_notS
+
+# Joint Probabilities
+S_and_T <- S * T_S
+S_and_notT <- S * notT_S
+notS_and_T <- notS * T_notS
+notS_and_notT <- notS * notT_notS
+
+# Total Probability
+sum <- S_and_T + S_and_notT + notS_and_T + notS_and_notT
+
+# Marginal Probabilities
+T <- S_and_T + notS_and_T
+notT <- 1 - T
 ```
 
 ```{r}
