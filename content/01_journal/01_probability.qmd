@@ -83,7 +83,7 @@ code
 ```
 
 Add a language to syntax highlight code blocks:
-# Assignment I
+#Assignment I
 
 ```{r}
 # Probabilities
@@ -119,10 +119,18 @@ plot(cars)
 ```
 # Assignment II
 
--What is the percentage of customers using all three devices?
-=(A∩B∩C) = 0.5%
--What is the percentage of customers using at least two devices?
-=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%
--What is the percentage of customers using only one device?
-= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%
+-What is the percentage of customers using all three devices?.
+
+=(A∩B∩C) = 0.5%.
+
+
+-What is the percentage of customers using at least two devices?.
+
+=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%.
+
+
+-What is the percentage of customers using only one device?.
+
+
+= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%.
 
