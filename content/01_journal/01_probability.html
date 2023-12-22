@@ -366,33 +366,15 @@ Note
 <h1 data-number="6"><span class="header-section-number">6</span> Source Code</h1>
 <p>Use ``` to delimit blocks of source code:</p>
 <pre><code>code</code></pre>
-<p>Add a language to syntax highlight code blocks: #Assignment I</p>
-<div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-1_d4091af8a373fb5846e17bc21c4ef127">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Probabilities</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>S <span class="ot">&lt;-</span> <span class="fl">0.3</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>T_S <span class="ot">&lt;-</span> <span class="fl">0.2</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>T_notS <span class="ot">&lt;-</span> <span class="fl">0.6</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co"># Complementary Probabilities</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>notS <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> S</span>
-<span id="cb2-8"><a href="#cb2-8"></a>notT_S <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> T_S</span>
-<span id="cb2-9"><a href="#cb2-9"></a>notT_notS <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> T_notS</span>
-<span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># Joint Probabilities</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a>S_and_T <span class="ot">&lt;-</span> S <span class="sc">*</span> T_S</span>
-<span id="cb2-13"><a href="#cb2-13"></a>S_and_notT <span class="ot">&lt;-</span> S <span class="sc">*</span> notT_S</span>
-<span id="cb2-14"><a href="#cb2-14"></a>notS_and_T <span class="ot">&lt;-</span> notS <span class="sc">*</span> T_notS</span>
-<span id="cb2-15"><a href="#cb2-15"></a>notS_and_notT <span class="ot">&lt;-</span> notS <span class="sc">*</span> notT_notS</span>
-<span id="cb2-16"><a href="#cb2-16"></a></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="co"># Total Probability</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a>sum <span class="ot">&lt;-</span> S_and_T <span class="sc">+</span> S_and_notT <span class="sc">+</span> notS_and_T <span class="sc">+</span> notS_and_notT</span>
-<span id="cb2-19"><a href="#cb2-19"></a></span>
-<span id="cb2-20"><a href="#cb2-20"></a><span class="co"># Marginal Probabilities</span></span>
-<span id="cb2-21"><a href="#cb2-21"></a>T <span class="ot">&lt;-</span> S_and_T <span class="sc">+</span> notS_and_T</span>
-<span id="cb2-22"><a href="#cb2-22"></a>notT <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> T</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Add a language to syntax highlight code blocks:</p>
+<div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-1_5e4cfbc3475ea61080071abc57644d75">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>#&gt; [1] 2</code></pre>
+</div>
 </div>
 <div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-2_15ddc482b8b5430e880cf39bb16d6264">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>cars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>cars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <div data-pagedtable="false">
@@ -403,7 +385,7 @@ Note
 </div>
 </div>
 <div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-3_309d9a6462ce7f52bf5764543dea986e">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">plot</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">plot</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -412,15 +394,40 @@ Note
 </div>
 </div>
 </div>
+<p>#Assignment I</p>
+<div class="cell" data-hash="01_probability_cache/html/unnamed-chunk-4_3edeecaba829a416f55cab30b848644c">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Probabilities</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>S <span class="ot">&lt;-</span> <span class="fl">0.3</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>T_S <span class="ot">&lt;-</span> <span class="fl">0.2</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>T_notS <span class="ot">&lt;-</span> <span class="fl">0.6</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="co"># Complementary Probabilities</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>notS <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> S</span>
+<span id="cb6-8"><a href="#cb6-8"></a>notT_S <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> T_S</span>
+<span id="cb6-9"><a href="#cb6-9"></a>notT_notS <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> T_notS</span>
+<span id="cb6-10"><a href="#cb6-10"></a></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="co"># Joint Probabilities</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a>S_and_T <span class="ot">&lt;-</span> S <span class="sc">*</span> T_S</span>
+<span id="cb6-13"><a href="#cb6-13"></a>S_and_notT <span class="ot">&lt;-</span> S <span class="sc">*</span> notT_S</span>
+<span id="cb6-14"><a href="#cb6-14"></a>notS_and_T <span class="ot">&lt;-</span> notS <span class="sc">*</span> T_notS</span>
+<span id="cb6-15"><a href="#cb6-15"></a>notS_and_notT <span class="ot">&lt;-</span> notS <span class="sc">*</span> notT_notS</span>
+<span id="cb6-16"><a href="#cb6-16"></a></span>
+<span id="cb6-17"><a href="#cb6-17"></a><span class="co"># Total Probability</span></span>
+<span id="cb6-18"><a href="#cb6-18"></a>sum <span class="ot">&lt;-</span> S_and_T <span class="sc">+</span> S_and_notT <span class="sc">+</span> notS_and_T <span class="sc">+</span> notS_and_notT</span>
+<span id="cb6-19"><a href="#cb6-19"></a></span>
+<span id="cb6-20"><a href="#cb6-20"></a><span class="co"># Marginal Probabilities</span></span>
+<span id="cb6-21"><a href="#cb6-21"></a>T <span class="ot">&lt;-</span> S_and_T <span class="sc">+</span> notS_and_T</span>
+<span id="cb6-22"><a href="#cb6-22"></a>notT <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> T</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="assignment-ii" class="level1" data-number="7">
 <h1 data-number="7"><span class="header-section-number">7</span> Assignment II</h1>
-<p>-What is the percentage of customers using all three devices?.</p>
-<p>=(A∩B∩C) = 0.5%.</p>
-<p>-What is the percentage of customers using at least two devices?.</p>
-<p>=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%.</p>
-<p>-What is the percentage of customers using only one device?.</p>
-<p>= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%.</p>
+<p>-What is the percentage of customers using all three devices?</p>
+<p>=(A∩B∩C) = 0.5%</p>
+<p>-What is the percentage of customers using at least two devices?</p>
+<p>=(A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C) = 18.4%</p>
+<p>-What is the percentage of customers using only one device?</p>
+<p>= 1 - ((A∩B) + (A∩C) + (B∩C) - 2 * (A∩B∩C)) = 81.6%</p>
 
 
 </section>
@@ -775,7 +782,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom"});</script>
 
 
 
