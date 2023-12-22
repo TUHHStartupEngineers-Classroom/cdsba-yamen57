@@ -1,7 +1,79 @@
 ---
 title: "Statistical Concepts"
 ---
+# 1
 
-::: callout-note
-You can delete everything in here and start fresh.
-:::
+For each variable, compute the following values. You can use the built-in functions or use the mathematical formulas.  
+expected value  
+variance  
+standard deviation  
+
+```{r}
+
+
+expected_age <- colMeans(random_vars[1])
+expected_income <- colMeans(random_vars[2])
+
+
+age_var = var(random_vars[1])
+income_var = var(random_vars[2])
+
+sd_random_vars <- lapply(random_vars, sd)
+
+
+```
+# 2
+-Explain, if it makes sense to compare the standard deviations.  
+
+Depending on the scenario, standard deviation can provide valuable insights, especially when comparing the output of two machines.  In our case, it does not make sense to compare the standard deviations of income and age, as income exhibits a larger degree of variability than age.
+
+# 3
+-Then, examine the relationship between both variables and compute:  
+covariance  
+correlation  
+
+```{r}
+
+covariance <- cov(random_vars[1], random_vars[2])
+correlation <- cor(random_vars[1], random_vars[2])
+
+
+
+```
+# 4
+-What measure is easier to interpret? Please discuss your interpretation.  
+
+For me, covariance is easier to interpret; The high, positive covariance indicates that the two random variables move in the same direction.
+
+
+# 5
+Compute the conditional expected value for:  
+
+
+```{r}
+
+covariance <- cov(random_vars[1], random_vars[2])
+correlation <- cor(random_vars[1], random_vars[2])
+
+
+
+```
+
+# 6
+
+-Compute the conditional expected value for:  
+```{r}
+
+#1
+expected_income_under_18 <- mean(random_vars$income[random_vars$age <= 18])
+
+#2
+expected_income_between_18_65 <- mean(random_vars$income[random_vars$age >= 18 & random_vars$age < 65])
+
+#3
+expected_income_above_65 <- mean(random_vars$income[random_vars$age >= 65])
+
+
+
+
+```
